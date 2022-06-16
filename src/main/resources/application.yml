@@ -1,0 +1,14 @@
+server:
+  port: 9166
+
+aws:
+  s3:
+    accessKey: yourAccessKey
+    secretKey: yourSecretKey
+    region: yourRegion
+
+
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
