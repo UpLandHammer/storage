@@ -17,6 +17,8 @@
 		<java.version>17</java.version>
 		<aws-java-sdk-s3.version>1.12.239</aws-java-sdk-s3.version>
 		<commons-io.version>2.11.0</commons-io.version>
+		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+		<springfox-swagger-ui.version>2.9.2</springfox-swagger-ui.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -51,13 +53,13 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
-			<version>3.0.0</version>
+			<version>${springfox-swagger2.version}</version>
 		</dependency>
 
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
-			<version>3.0.0</version>
+			<version>${springfox-swagger-ui.version}</version>
 		</dependency>
 	</dependencies>
 

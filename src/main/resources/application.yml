@@ -1,11 +1,11 @@
 server:
-  port: 9166
+  port: 8081
 
 aws:
   s3:
-    accessKey: yourAccessKey
-    secretKey: yourSecretKey
-    region: yourRegion
+    accessKey: AKIA2VGMYN6HWYBMO36P
+    secretKey: a18MTuAYCR5Pq9/hT2vkkzvsYWb8UBx2nHTiP64I
+    region: us-east-1
 
 
 spring:
