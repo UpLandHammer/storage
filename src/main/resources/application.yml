@@ -3,9 +3,9 @@ server:
 
 aws:
   s3:
-    accessKey: AKIA2VGMYN6HWYBMO36P
-    secretKey: a18MTuAYCR5Pq9/hT2vkkzvsYWb8UBx2nHTiP64I
-    region: us-east-1
+    accessKey: yourAccessKey
+    secretKey: yourSecretKey
+    region: yourRegion
 
 
 spring:
