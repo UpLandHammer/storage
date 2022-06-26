@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Component
 @RequiredArgsConstructor
@@ -18,7 +19,7 @@ public class ListAllObjectsByBucketName {
     public List<S3ObjectSummary> executar(String bucketName) {
 
         List<CreateBucketResponse> createBucketResponses = storageContentFileService.listAllBuckets();
-        List<String> listOfBucketName = createBucketResponses.stream().map(CreateBucketResponse::getName).toList();
+        List<String> listOfBucketName = createBucketResponses.stream().map(CreateBucketResponse::getName).collect(Collectors.toList());
 
         if(!listOfBucketName.contains(bucketName)) {
             throw new StorageFileException(String.format("Bucket not found %s", bucketName));

@@ -14,7 +14,7 @@
 	<name>storage</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 		<aws-java-sdk-s3.version>1.12.239</aws-java-sdk-s3.version>
 		<commons-io.version>2.11.0</commons-io.version>
 		<springfox-swagger2.version>2.9.2</springfox-swagger2.version>

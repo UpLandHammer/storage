@@ -5,6 +5,7 @@ import com.amazonaws.services.s3.model.Bucket;
 import lombok.experimental.UtilityClass;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @UtilityClass
 public class CreateBucketResponseParser {
@@ -18,6 +19,6 @@ public class CreateBucketResponseParser {
     }
 
     public static List<CreateBucketResponse> from(List<Bucket> bucketList) {
-        return bucketList.stream().map(CreateBucketResponseParser::from).toList();
+        return bucketList.stream().map(CreateBucketResponseParser::from).collect(Collectors.toList());
     }
 }

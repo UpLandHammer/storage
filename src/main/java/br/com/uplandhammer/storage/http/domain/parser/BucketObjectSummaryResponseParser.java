@@ -5,6 +5,7 @@ import com.amazonaws.services.s3.model.S3ObjectSummary;
 import lombok.experimental.UtilityClass;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @UtilityClass
 public class BucketObjectSummaryResponseParser {
@@ -24,6 +25,6 @@ public class BucketObjectSummaryResponseParser {
     }
 
     public static List<BucketObjectSummaryResponse> create(List<S3ObjectSummary> objectSummaries){
-        return objectSummaries.stream().map(BucketObjectSummaryResponseParser::create).toList();
+        return objectSummaries.stream().map(BucketObjectSummaryResponseParser::create).collect(Collectors.toList());
     }
 }
